@@ -23,7 +23,7 @@
             <p><%= projectData.informations[0].navbar[0].description %></p>
             <div>
                 <% if(projectData.informations[0].navbar[0].external_url) { %>
-                    <a href="<%= projectData.informations[0].navbar[0].external_url_path %>" class="link primary-link" target="blank"> <i class="fa fa-link"></i> </a>
+                    <a href="<%= baseUri %><%= projectData.informations[0].navbar[0].external_url_path %>" class="link primary-link" target="blank"> <i class="fa fa-link"></i> </a>
                 <% } %>
             </div>
         </div>

@@ -6,7 +6,8 @@ const resolve = require('path').resolve
 router.get('/', async function(req, res, next) {
 	res.render('index', {
 		viewPath: 'home/index.ejs',
-		currentPage: 'home'
+		currentPage: 'home',
+		baseUri: process.env.baseUri
 	});
 });
 

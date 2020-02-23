@@ -9,7 +9,8 @@ router.get('/', async function(req, res, next) {
 	res.render('index', {
 		viewPath: 'project/list.ejs',
 		currentPage: 'project',
-		projectsData: JSON.parse(rawdata)
+		projectsData: JSON.parse(rawdata),
+		baseUri: process.env.baseUri
 	});
 });
 
@@ -32,16 +33,16 @@ router.get('/:query', async function (req, res) {
 			viewPath: 'project/article.ejs',
 			currentPage: 'project',
 			projectData: JSON.parse(rawdata_p),
-			ref: code
+			ref: code,
+			baseUri: process.env.baseUri
 		});
 	}else{
 		res.render('index', {
 			viewPath: 'project/article_not_found.ejs',
 			currentPage: 'project',
+			baseUri: process.env.baseUri
 		});
 	}
-	
-
 })
 
 module.exports = router;

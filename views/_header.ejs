@@ -10,22 +10,22 @@
 		<div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="example-collapse-navbar">
 			<ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
 				<li class="flex items-center">
-					<a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center" href="./">
+					<a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center" href="<%= baseUri %>">
 						<span class="inline-block ml-2 <% if (currentPage == 'home') { %> font-extrabold text-blue-700 <% } %>">Accueil</span>
 					</a>
 				</li>
 				<li class="flex items-center">
-					<a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center" href="./projets">
+					<a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center" href="<%= baseUri %>projets">
 						<span class="inline-block ml-2 <% if (currentPage == 'project') { %> font-extrabold text-blue-700 <% } %>">Projets</span>
 					</a>
 				</li>
 				<li class="flex items-center">
-					<a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center" href="./github">
+					<a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center" href="<%= baseUri %>github">
 						<span class="inline-block ml-2 <% if (currentPage == 'github') { %> font-extrabold text-blue-700 <% } %>">Github</span>
 					</a>
 				</li>
 				<li class="flex items-center">
-					<a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center" href="./job">
+					<a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center" href="<%= baseUri %>job">
 						<span class="inline-block ml-2">Mon CV</span>
 					</a>
 				</li>
