@@ -24,7 +24,7 @@
 
                 <div class="mt-10">
                     <% for (let key in projectsData) { %>
-                        <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl mb-10 project-item" style="min-height: 19rem;" data-category="<%= projectsData[key].category %>">
+                        <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl mb-10 project-item" style="min-height: 19rem;" data-category="<%= projectsData[key].category %>" data-aos="fade-right" data-aos-once="true" data-aos-duration="600">
                             <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
                                 <img class="absolute inset-0 w-full h-full object-cover object-center" src="<%= projectsData[key].banner %>" alt="">
                                 <div class="absolute inset-0 w-full h-full"></div>
