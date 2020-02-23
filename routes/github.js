@@ -2,12 +2,7 @@ let express = require('express');
 let router = express.Router();
 const github = require('octonode');
 
-let client = github.client({
-	id: process.env.GITHUB_ID,
-	secret: process.env.GITHUB_SECRET
-});
-  
-
+let client = github.client(process.env.GITHUB_ACCESS_TOKEN);
 
 
 /* GET github home page. */

@@ -24,6 +24,12 @@
 
 
                 <div class="mt-10">
+                    <div class="justify-center content-center flex-wrap text-center my-20 hidden" id="empty_cat">
+                        <img src="/images/illustrations/empty_category.svg" alt="" class="w-1/2 mx-auto">
+                        <h3 class="text-gray-600 text-1xl my-3">Il n'y a aucun projet de ce type pour le moment.</h3>
+                    </div>
+
+
                     <div class="flex flex-wrap">
 
                         <% for (let key in projectsData) { %>
@@ -33,10 +39,6 @@
                                     <div class="p-4 h-auto md:h-40 lg:h-48">
                                         <a href="<%= baseUri %>projets/<%= projectsData[key].link %>" class="block text-blue-700 hover:text-blue-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"><%= projectsData[key].name %></a>
                                         <div class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"><%= projectsData[key].description %></div>
-                                        <div class="relative mt-2 lg:absolute bottom-0 mb-4 md:hidden lg:block">
-                                            <a class="inline bg-gray-300 py-1 px-2 rounded-full text-xs lowercase text-gray-700" href="#">#something</a>
-                                            <a class="inline bg-gray-300 py-1 px-2 rounded-full text-xs lowercase text-gray-700" href="#">#sky</a>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -60,9 +62,17 @@
         if(type == 'all'){
             $( ".project-item" ).fadeIn(200);
             $( ".project-item" ).show();
+            $( "#empty_cat" ).addClass('hidden');
         }else{
             $( ".project-item" ).hide();
-            $( "[data-category='"+ type +"']" ).fadeIn(200);
+            let n = $( "[data-category='"+ type +"']" ).length;
+
+            if(n == 0){
+                $( "#empty_cat" ).removeClass('hidden');
+            }else{
+                $( "#empty_cat" ).addClass('hidden');
+                $( "[data-category='"+ type +"']" ).fadeIn(200);
+            }
         }
     });
 </script>
