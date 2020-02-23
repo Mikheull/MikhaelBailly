@@ -1,0 +1,55 @@
+{
+    "a97y1c": {
+        "category": "app",
+        "name": "BlindTest",
+        "description": "Application Web de blindtest relié a Spotify",
+        "date": "09/10/2019",
+        "banner": "images/projets/a97y1c/banners/banner.jpg",
+        "link": "BlindTest"
+    },
+
+    "R5H37x": {
+        "category": "site",
+        "name": "Improove - Gestion de projet",
+        "description": "Plateforme complète de gestion de projet de tout type",
+        "date": "10/09/2019",
+        "banner": "images/projets/R5H37x/banners/banner.jpg",
+        "link": "Improove-gestion-de-projet"
+    },
+
+    "2jua0F": {
+        "category": "app",
+        "name": "GTM",
+        "description": "Application Web de gestion de stock",
+        "date": "28/04/2019",
+        "banner": "images/projets/2jua0F/banners/banner.jpg",
+        "link": "GTM-Gestion-de-stock"
+    },
+
+    "xAZ5HB": {
+        "category": "site",
+        "name": "Shopy - ECommerce CMS",
+        "description": "Site de vente de vêtements - 2019",
+        "date": "16/01/2019",
+        "banner": "images/projets/xAZ5HB/banners/banner.jpg",
+        "link": "Shopy-vente-de-vetements-en-ligne"
+    },
+
+    "i83JkE": {
+        "category": "other",
+        "name": "WebIE - Explorateur",
+        "description": "WebIE est un explorateur de fichier / dossier pour le web. Il inclut une multitude d'outils utile pour gérer vos fichiers.",
+        "date": "30/06/2018",
+        "banner": "images/projets/i83JkE/banners/banner.jpg",
+        "link": "WebIE-explorateur-de-fichier"
+    },
+
+    "0iJ1kz": {
+        "category": "site",
+        "name": "Strawberry - CMS de restaurant",
+        "description": "Site de gestion d'un restaurant (projet scolaire)",
+        "date": "20/09/2018",
+        "banner": "images/projets/0iJ1kz/banners/banner.jpg",
+        "link": "Strawberry-Restaurant-en-ligne"
+    }
+}

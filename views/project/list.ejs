@@ -1,0 +1,65 @@
+<main>
+
+    <div class="relative flex content-center items-center justify-center" style="min-height: 8vh;">
+        <div class="absolute top-0 w-full h-full bg-gray-900"></div>
+    </div>
+
+
+    <div class="py-16 bg-gray-300">
+        <div class="container mx-auto px-4">
+
+            <h1 class="text-gray font-semibold text-4xl">Mes projets</h1>
+            <h2 class="text-gray-600 text-1xl">Découvrez mes créations, que ce soit des sites, des applications ou encore des designs.</h2>
+
+            <div>
+                <nav class="mt-5">
+                    <ul class="flex list-none mt-5 filter-btn-group">
+                        <li class="mr-3 nav-item"> <a data-filter="all" class="text-teal-dark uppercase text-xs font-bold cursor-pointer py-1 flex items-center font-black text-blue-700">Tout</a> </li>
+                        <li class="mr-3 nav-item"> <a data-filter="site" class="text-teal-dark uppercase text-xs font-bold cursor-pointer py-1 flex items-center">Sites</a> </li>
+                        <li class="mr-3 nav-item"> <a data-filter="app" class="text-teal-dark uppercase text-xs font-bold cursor-pointer py-1 flex items-center">Apps</a> </li>
+                        <li class="mr-3 nav-item"> <a data-filter="design" class="text-teal-dark uppercase text-xs font-bold cursor-pointer py-1 flex items-center">Design</a> </li>
+                        <li class="mr-3 nav-item"> <a data-filter="other" class="text-teal-dark uppercase text-xs font-bold cursor-pointer py-1 flex items-center">Autres</a> </li>
+                    </ul>
+                </nav>
+
+                <div class="mt-10">
+                    <% for (let key in projectsData) { %>
+                        <div class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl mb-10 project-item" style="min-height: 19rem;" data-category="<%= projectsData[key].category %>">
+                            <div class="relative w-full md:w-2/5 h-full overflow-hidden rounded-t-lg md:rounded-t-none md:rounded-l-lg" style="min-height: 19rem;">
+                                <img class="absolute inset-0 w-full h-full object-cover object-center" src="<%= projectsData[key].banner %>" alt="">
+                                <div class="absolute inset-0 w-full h-full"></div>
+                            </div>
+                            <div class="w-full md:w-3/5 h-full flex items-center bg-gray-100 rounded-lg">
+                                <div class="p-12 md:pr-24 md:pl-16 md:py-12">
+                                    <p class="text-gray-600"><span class="text-gray-900"><%= projectsData[key].name %>.</span> <%= projectsData[key].description %></p>
+                                    <a class="flex items-baseline mt-3 text-blue-600 hover:text-blue-700 focus:text-blue-900" href="projets/<%= projectsData[key].link %>">
+                                        <span>Découvrir le projet</span>
+                                        <span class="text-xs ml-1"><i class="fa fa-arrow-right"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+
+<script>
+    $( ".filter-btn-group li a" ).click(function() {
+        var type = this.dataset.filter;
+
+        $( ".filter-btn-group li a" ).removeClass('font-black text-blue-700');
+        $( this ).addClass('font-black text-blue-700');
+        if(type == 'all'){
+            $( ".project-item" ).fadeIn(200);
+            $( ".project-item" ).show();
+        }else{
+            $( ".project-item" ).hide();
+            $( "[data-category='"+ type +"']" ).fadeIn(200);
+        }
+    });
+</script>

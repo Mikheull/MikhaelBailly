@@ -1,0 +1,97 @@
+{
+    "components":
+        [
+            "informations",
+            "missions",
+            "gallery",
+            "languages"
+        ],
+
+    "identity":
+        [
+            {
+                "logo":
+                    [
+                        {
+                            "enable": true,
+                            "path": "images/projets/a97y1c/logo.svg"
+                        }
+                    ],
+                "shortname": "BlindTest",
+                "fullname": "BlindTest musical"
+            }
+        ],
+
+    "informations":
+        [
+            {
+               "release_date": "09/10/2019", 
+               "last_edit_date": "09/10/2019",
+               "shared_url": "https://mikhaelbailly.fr/BlindTest",
+               "navbar": 
+                    [
+                        {
+                            "external_url": false,
+                            "external_url_path": "",
+                            "description": "Application web de blindtest musical sur Spotify"
+                        }
+                    ],
+                "description":
+                    [
+                        {
+                            "enable": true,
+                            "text": "Cette application est reliée à l'api Spotify et permet de créer un blindtest avec des utilisateurs connectés dans la même salle. Un backoffice permet de voir les réponses des utilisateurs et de leur attribuer les points."
+                        }
+                    ],
+                "card":
+                    [
+                        {
+                            "title": "Nom",
+                            "data": "BlindTest"
+                        },
+                        {
+                            "title": "Type",
+                            "data": "Application Web"
+                        },
+                        {
+                            "title": "Durée",
+                            "data": "2 semaines"
+                        }
+                    ]
+            }
+        ],
+
+    "missions":
+        [
+            {
+                "title": "Automatisme",
+                "data": "Automatiser les actions de blindtest"
+            },
+            {
+                "title": "Simple",
+                "data": "Proposer une interface simple a utiliser"
+            },
+            {
+                "title": "API",
+                "data": "Utiliser des API publiques"
+            }
+        ],
+
+    "languages":
+        [
+            "NodeJS",
+            "Javascript",
+            "MySQL",
+            "CSS",
+            "HTML - ejs"
+        ],
+
+    "gallery":
+        [
+            {
+                "min_name": "user_game.min.jpg",
+                "original_name": "user_game.jpg",
+                "alt": "Interface de jeu de l'utilisateur"
+            }
+        ]
+}

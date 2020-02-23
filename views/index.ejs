@@ -30,13 +30,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.css">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    
-    
-    <% if( locals.assets && locals.assets.stylesheets ) { %>
-        <% locals.assets.stylesheets.forEach( style => { %>
-            <link rel="stylesheet" type="text/css" href="/stylesheets/<%= style %>"> 
-        <% }) %>
-    <% } %>
+    <link rel="stylesheet" href="/stylesheets/custom.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script>
 </head>
 <body class="text-gray-800 antialiased">
 
@@ -45,17 +41,6 @@
         <%- include( viewPath ); -%>
 
     <%- include('_footer'); -%>
-    
-    <% if( locals.assets && locals.assets.javascripts ) { %>
-        <% locals.assets.javascripts.forEach( script => { %>
-            <script src="/javascripts/<%= script %>"></script>
-        <% }) %>
-    <% } %>
-    <script>
-        function toggleNavbar(collapseID) {
-            document.getElementById(collapseID).classList.toggle("hidden");
-            document.getElementById(collapseID).classList.toggle("block");
-        }
-    </script>
+    <script src="/javascripts/custom.js"></script>
 </body>
 </html>

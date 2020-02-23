@@ -1,0 +1,125 @@
+{
+    "components":
+        [
+            "informations",
+            "missions",
+            "gallery",
+            "languages"
+        ],
+
+    "identity":
+        [
+            {
+                "logo":
+                    [
+                        {
+                            "enable": true,
+                            "path": "images/projets/0iJ1kz/logo.svg"
+                        }
+                    ],
+                "shortname": "Strawberry",
+                "fullname": "Strawberry - CMS de restaurant"
+            }
+        ],
+
+    "informations":
+        [
+            {
+               "release_date": "20/09/2018", 
+               "last_edit_date": "10/09/2019",
+               "shared_url": "https://mikhaelbailly.fr/Strawberry-Restaurant-en-ligne",
+               "navbar": 
+                    [
+                        {
+                            "external_url": false,
+                            "external_url_path": "https://mikhaelbailly.fr/preview/strawberry",
+                            "description": "CMS de gestion de restaurant"
+                        }
+                    ],
+                "description":
+                    [
+                        {
+                            "enable": true,
+                            "text": "Strawberry est un CMS fait main qui génère un simple site pour des restaurants. Il propose quelques fonctionnalités comme la personnalisation du site (couleur etc...), la configuration de widgets (horraires d'ouvertures, images Instagram ...), ou encore la création de menus activable selon la configuration dans le pannel."
+                        }
+                    ],
+                "card":
+                    [
+                        {
+                            "title": "Nom",
+                            "data": "Strawberry"
+                        },
+                        {
+                            "title": "Type",
+                            "data": "CMS Restauration"
+                        },
+                        {
+                            "title": "Projet",
+                            "data": "Scolaire (2ème année)"
+                        },
+                        {
+                            "title": "Durée",
+                            "data": "6 mois"
+                        }
+                    ]
+            }
+        ],
+
+    "missions":
+        [
+            {
+                "title": "Scolaire",
+                "data": "Créer un petit CMS"
+            },
+            {
+                "title": "Scolaire",
+                "data": "Approfondir les langages appris"
+            },
+            {
+                "title": "Installation",
+                "data": "Créer un site qui se génère tout seul"
+            },
+            {
+                "title": "Gestion",
+                "data": "Gérer un restaurant via interface administrateur"
+            },
+            {
+                "title": "UI design",
+                "data": "Proposer un design attractif"
+            },
+            {
+                "title": "SEO",
+                "data": "Optimiser le référencement"
+            }
+        ],
+
+    "languages":
+        [
+            "HTML",
+            "Javascript",
+            "PHP",
+            "MySQL",
+            "CSS",
+            "Json",
+            "Ajax"
+        ],
+
+    "gallery":
+        [
+            {
+                "min_name": "home.min.jpg",
+                "original_name": "home.jpg",
+                "alt": "Page d'accueil du restaurant"
+            },
+            {
+                "min_name": "menu.min.jpg",
+                "original_name": "menu.jpg",
+                "alt": "Menu du restaurant"
+            },
+            {
+                "min_name": "backoffice-invoices.min.jpg",
+                "original_name": "backoffice-invoices.jpg",
+                "alt": "Outil de génération de factures"
+            }
+        ]
+}
