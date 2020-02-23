@@ -4,8 +4,12 @@ let router = express.Router();
 
 /* GET github home page. */
 router.get('/', async function(req, res, next) {
-	res.send('github home');
+	res.render('index', {
+		viewPath: 'github/list.ejs',
+		currentPage: 'github',
+	});
 });
+
 
 
 /* GET github reference page. */
