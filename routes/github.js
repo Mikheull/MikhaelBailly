@@ -1,13 +1,14 @@
 let express = require('express');
 let router = express.Router();
+const fs = require("fs");
 const github = require('octonode');
 
 let client = github.client(process.env.GITHUB_ACCESS_TOKEN);
 
-
 /* GET github home page. */
 router.get('/', async function(req, res, next) {
 	let filters = [];
+	let rawbannersdata = fs.readFileSync('data/github.json');
 	
 	client.get('/users/mikheull/repos', {}, function (err, status, body, headers) {
 		
@@ -22,6 +23,7 @@ router.get('/', async function(req, res, next) {
 		res.render('index', {
 			viewPath: 'github/list.ejs',
 			currentPage: 'github',
+			banners: JSON.parse(rawbannersdata),
 			datas: body, 
 			filters: filters,
 			baseUri: process.env.baseUri
@@ -29,32 +31,5 @@ router.get('/', async function(req, res, next) {
 	})
 	
 });
-
-
-/* GET github reference page. */
-router.get('/:query', async function (req, res) {
-	let ref = req.params.query;
-
-	client.get('/repos/mikheull/'+ref, {}, function (err, status, body, headers) {
-		
-		//Vue
-		if(status){
-			res.render('index', {
-				viewPath: 'github/article.ejs',
-				currentPage: 'github',
-				projectData: body,
-				ref: ref,
-				baseUri: process.env.baseUri
-			});
-		}else{
-			res.render('index', {
-				viewPath: 'github/article_not_found.ejs',
-				currentPage: 'github',
-				baseUri: process.env.baseUri
-			});
-		}
-	})
-
-})
 
 module.exports = router;

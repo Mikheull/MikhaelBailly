@@ -28,7 +28,7 @@ router.get('/:query', async function (req, res) {
 	}
 	
 	if(code !== ''){
-		let rawdata_p = fs.readFileSync('data/'+code+'.json');
+		let rawdata_p = fs.readFileSync('data/projects/'+code+'.json');
 		res.render('index', {
 			viewPath: 'project/article.ejs',
 			currentPage: 'project',
