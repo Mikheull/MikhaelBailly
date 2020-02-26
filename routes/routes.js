@@ -3,14 +3,9 @@ const router = express.Router();
 const resolve = require('path').resolve
 
 
-router.get('/', async function(req, res, next) {
-	res.render('index', {
-		viewPath: 'home/index.ejs',
-		currentPage: 'home',
-		baseUri: process.env.baseUri
-	});
-});
 
+
+router.use('/', require('./index') );
 router.use('/github', require('./github') );
 router.use('/projets', require('./project') );
 router.get('/job', function(req, res) {res.sendFile( resolve('./public/uploads/CV.pdf') );})
