@@ -33,10 +33,10 @@
                     <div class="flex flex-wrap">
 
                         <% for (let key in projectsData) { %>
-                            <div class="my-1 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 project-item" data-category="<%= projectsData[key].category %>">
+                            <div class="my-3 px-1 w-full md:w-1/2 lg:my-4 lg:px-4 lg:w-1/3 project-item" data-category="<%= projectsData[key].category %>">
                                 <div class="bg-white rounded-lg overflow-hidden shadow relative">
-                                    <img class="h-56 w-full object-cover object-center" src="<%= projectsData[key].banner %>" alt="">
-                                    <div class="p-4 h-auto md:h-40 lg:h-48">
+                                    <div class="h-56 wrap_banner" style="background: url('<%= projectsData[key].banner %>');background-position: center center;background-size: cover;"></div>
+                                    <div class="p-4 h-auto md:h-40 lg:h-28">
                                         <a href="<%= baseUri %>projets/<%= projectsData[key].link %>" class="block text-blue-700 hover:text-blue-600 font-semibold mb-2 text-lg md:text-base lg:text-lg"><%= projectsData[key].name %></a>
                                         <div class="text-gray-600 text-sm leading-relaxed block md:text-xs lg:text-sm"><%= projectsData[key].description %></div>
                                     </div>
@@ -51,7 +51,6 @@
         </div>
     </div>
 </main>
-
 
 <script>
     $( ".filter-btn-group li a" ).click(function() {

@@ -2,3 +2,20 @@
 .title-md-shadow {text-shadow: 26px -15px 0px rgba(7, 24, 40, 0.03);}
 .title-sm-shadow {text-shadow: 21px -12px 0px rgba(7, 24, 40, 0.03);}
 .title-xs-shadow {text-shadow: 12px -7px 0px rgba(7, 24, 40, 0.03);}
+
+.wrap_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: all .8s;
+}
+  
+.wrap_banner::before { 
+    content:"";
+    position:absolute; top:0;right:0;bottom:0;left:0;
+    background:inherit;
+    transition:inherit;
+}
+.wrap_banner:hover::before { 
+    transform: scale(1.1);
+}
