@@ -6,7 +6,7 @@ const nodemailer = require('nodemailer');
 router.get('/', async function(req, res, next) {
 	res.render('index', {
 		viewPath: 'home/index.ejs',
-		currentPage: 'home',
+        currentPage: 'home',
 		baseUri: process.env.baseUri
 	});
 });
@@ -16,8 +16,8 @@ router.post('/', async function(req, res, next) {
         host: 'smtp.mailtrap.io',
         port: 2525,
         auth: {
-           user: 'b8b14cf92982e6',
-           pass: '3ff8403eeb2e13'
+           user: process.env.MAILTRAP_USER,
+           pass: process.env.MAILTRAP_PASS
         }
     });
 

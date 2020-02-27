@@ -9,6 +9,7 @@ router.get('/', async function(req, res, next) {
 	res.render('index', {
 		viewPath: 'project/list.ejs',
 		currentPage: 'project',
+        meta: 'project',
 		projectsData: JSON.parse(rawdata),
 		baseUri: process.env.baseUri
 	});
@@ -32,6 +33,7 @@ router.get('/:query', async function (req, res) {
 		res.render('index', {
 			viewPath: 'project/article.ejs',
 			currentPage: 'project',
+			meta: 'project-details',
 			projectData: JSON.parse(rawdata_p),
 			ref: code,
 			baseUri: process.env.baseUri
@@ -40,6 +42,7 @@ router.get('/:query', async function (req, res) {
 		res.render('index', {
 			viewPath: 'project/article_not_found.ejs',
 			currentPage: 'project',
+			meta: 'project',
 			baseUri: process.env.baseUri
 		});
 	}

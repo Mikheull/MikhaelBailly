@@ -23,6 +23,7 @@ router.get('/', async function(req, res, next) {
 		res.render('index', {
 			viewPath: 'github/list.ejs',
 			currentPage: 'github',
+			meta: 'github',
 			banners: JSON.parse(rawbannersdata),
 			datas: body, 
 			filters: filters,
