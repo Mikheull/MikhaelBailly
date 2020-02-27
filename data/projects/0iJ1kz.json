@@ -1,7 +1,6 @@
 {
     "components":
         [
-            "informations",
             "missions",
             "gallery",
             "languages"
@@ -35,6 +34,10 @@
                             "external_url_path": "https://mikhaelbailly.fr/preview/strawberry",
                             "description": "CMS de gestion de restaurant"
                         }
+                    ],
+                "tags": 
+                    [
+                        "CMS"
                     ],
                 "description":
                     [

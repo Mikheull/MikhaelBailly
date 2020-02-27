@@ -1,7 +1,6 @@
 {
     "components":
         [
-            "informations",
             "missions",
             "gallery",
             "languages"
@@ -35,6 +34,13 @@
                             "external_url_path": "",
                             "description": "Plateforme de gestion de projet - 2019"
                         }
+                    ],
+                "tags": 
+                    [
+                        "Gestion de projet",
+                        "Plateforme",
+                        "Agile",
+                        "Team"
                     ],
                 "description":
                     [

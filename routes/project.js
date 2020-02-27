@@ -21,20 +21,29 @@ router.get('/:query', async function (req, res) {
 	let rawdata = fs.readFileSync('data/projects.json');
 	let list = JSON.parse(rawdata);
 
-	let code = '';
+	let code, prev, next = '';
 	for (let key in list) {
 		if(list[key].link == ref){
+			prev = key - 1;
 			code = key;
+			next = key + 1;
 		}
 	}
 	
 	if(code !== ''){
 		let rawdata_p = fs.readFileSync('data/projects/'+code+'.json');
+		let projectData = JSON.parse(rawdata_p);
+
+		let prevData = list[ list[code].prev ];
+		let nextData = list[ list[code].next ];
+		
 		res.render('index', {
 			viewPath: 'project/article.ejs',
 			currentPage: 'project',
 			meta: 'project-details',
-			projectData: JSON.parse(rawdata_p),
+			projectData: projectData,
+			prevData: prevData,
+			nextData: nextData,
 			ref: code,
 			baseUri: process.env.baseUri
 		});

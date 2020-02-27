@@ -1,7 +1,6 @@
 {
     "components":
         [
-            "informations",
             "missions",
             "gallery",
             "languages"
@@ -35,6 +34,10 @@
                             "external_url_path": "https://mikhaelbailly.fr/preview/shopy",
                             "description": "Site de vente de vêtements - 2019"
                         }
+                    ],
+                "tags": 
+                    [
+                        "Shopping"
                     ],
                 "description":
                     [

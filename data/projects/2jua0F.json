@@ -1,7 +1,6 @@
 {
     "components":
         [
-            "informations",
             "missions",
             "gallery",
             "languages"
@@ -35,6 +34,12 @@
                             "external_url_path": "https://mikhaelbailly.fr/preview/gtm",
                             "description": "Application web de gestion de stock - 2019"
                         }
+                    ],
+                "tags": 
+                    [
+                        "Application",
+                        "Gestion",
+                        "Team"
                     ],
                 "description":
                     [

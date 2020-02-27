@@ -1,7 +1,6 @@
 {
     "components":
         [
-            "informations",
             "missions",
             "gallery",
             "languages"
@@ -13,8 +12,7 @@
                 "logo":
                     [
                         {
-                            "enable": true,
-                            "path": "images/projets/a97y1c/logo.svg"
+                            "enable": false
                         }
                     ],
                 "shortname": "BlindTest",
@@ -35,6 +33,12 @@
                             "external_url_path": "",
                             "description": "Application web de blindtest musical sur Spotify"
                         }
+                    ],
+                "tags": 
+                    [
+                        "Application",
+                        "Musique",
+                        "Spotify"
                     ],
                 "description":
                     [

@@ -1,7 +1,6 @@
 {
     "components":
         [
-            "informations",
             "missions",
             "languages"
         ],
@@ -34,6 +33,10 @@
                             "external_url_path": "https://github.com/Mikheull/WebIE",
                             "description": "Explorateur de fichiers sur le web"
                         }
+                    ],
+                "tags": 
+                    [
+                        "Interface"
                     ],
                 "description":
                     [
