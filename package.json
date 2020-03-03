@@ -1,14 +1,21 @@
 {
-  "name": "bailly_portfolio",
+  "name": "mikhaelbailly",
   "version": "1.0.0",
   "description": "My Website portfolio",
   "main": "app.js",
   "scripts": {
-    "server": "babel-node app.js",
     "start": "nodemon"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikheull/MikhaelBailly.git"
+  },
+  "homepage": "https://github.com/Mikheull/MikhaelBailly#readme",
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mikheull/MikhaelBailly/issues"
+  },
   "devDependencies": {
     "nodemon": "^1.19.4"
   },
