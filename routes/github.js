@@ -18,7 +18,6 @@ router.get('/', async function(req, res, next) {
 				filters.push(body[key].language);
 			}
 		}
-		console.log(body);
 		
 		
 		//Vue
