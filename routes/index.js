@@ -2,7 +2,6 @@ let express = require('express');
 let router = express.Router();
 const nodemailer = require('nodemailer');
 
-
 router.get('/', async function(req, res, next) {
 	res.render('index', {
 		viewPath: 'home/index.ejs',
@@ -21,21 +20,22 @@ router.post('/', async function(req, res, next) {
         }
     });
 
-    const message = `Mail: ${req.body.email}<br> Nom: ${req.body.full_name}<br><br> Message: ${req.body.message}`;
-    const email = {
-        from: 'mikhae.bailly@gmail.com',
-        to: 'mikhae.bailly@gmail.com',
-        subject: 'Contact [mikhaelbailly.fr]',
-        html: message
-    };
-    transport.sendMail(email, function(err, info) {
-        if (err) {
-            console.log(err)
-        } else {
-            console.log(info);
-        }
-    });
-    
+    if(req.body.email && req.body.message && req.body['g-recaptcha-response'] !== '') {
+        const message = `Mail: ${req.body.email}<br> Nom: ${req.body.full_name}<br><br> Message: ${req.body.message}`;
+        const email = {
+            from: 'mikhae.bailly@gmail.com',
+            to: 'mikhae.bailly@gmail.com',
+            subject: 'Contact ['+ req.body.email +']',
+            html: message
+        };
+        transport.sendMail(email, function(err, info) {
+            if (err) {
+                console.log(err)
+            } else {
+                console.log(info);
+            }
+        });
+    }
 
 	res.redirect('/');
 });
