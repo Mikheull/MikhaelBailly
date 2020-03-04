@@ -3,7 +3,7 @@
         <div class="absolute top-0 w-full h-full bg-gray-900"></div>
     </div>
 
-    <div class="py-16 bg-gray-300">
+    <div class="py-8 bg-gray-300">
         <div class="container mx-auto px-4">
         
             <h1 class="text-gray font-semibold text-4xl">Mes repos Github</h1>
@@ -11,12 +11,12 @@
 
             <div>
                 <nav class="mt-5">
-                    <ul class="flex list-none mt-5 filter-btn-group">
-                        <li class="mr-3 nav-item"> <a data-filter="all" class="text-teal-dark uppercase text-xs font-bold cursor-pointer py-1 flex items-center font-black text-blue-700">Tout</a> </li>
+                    <ul class="list-none mt-5 filter-btn-group">
+                        <li class="mr-3 nav-item hover:underline hover:text-blue-700 inline-block"> <a data-filter="all" class="text-teal-dark uppercase text-xs font-bold cursor-pointer py-1 flex items-center font-black text-blue-700">Tout</a> </li>
                         <% for (let keyF in filters) { %>
-                            <li class="mr-3 nav-item"> <a data-filter="<%= filters[keyF] %>" class="text-teal-dark uppercase text-xs font-bold cursor-pointer py-1 flex items-center"><%= filters[keyF] %></a> </li>
+                            <li class="mr-3 nav-item hover:underline hover:text-blue-700 inline-block"> <a data-filter="<%= filters[keyF] %>" class="text-teal-dark uppercase text-xs font-bold cursor-pointer py-1 flex items-center"><%= filters[keyF] %></a> </li>
                         <% } %>
-                        <li class="mr-3 nav-item"> <a data-filter="other" class="text-teal-dark uppercase text-xs font-bold cursor-pointer py-1 flex items-center">Autres</a> </li>
+                        <li class="mr-3 nav-item hover:underline hover:text-blue-700 inline-block"> <a data-filter="other" class="text-teal-dark uppercase text-xs font-bold cursor-pointer py-1 flex items-center">Autres</a> </li>
                     </ul>
                 </nav>
 
