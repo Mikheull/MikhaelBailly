@@ -21,7 +21,7 @@ router.get('/:query', async function (req, res) {
 	let rawdata = fs.readFileSync('data/projects.json');
 	let list = JSON.parse(rawdata);
 
-	let code, prev, next = '';
+	let code, prev, next;
 	for (let key in list) {
 		if(list[key].link == ref){
 			prev = key - 1;
@@ -30,7 +30,14 @@ router.get('/:query', async function (req, res) {
 		}
 	}
 	
-	if(code !== ''){
+	if(code === undefined || code === null){
+		res.render('index', {
+			viewPath: 'project/article_not_found.ejs',
+			currentPage: 'project',
+			meta: 'project',
+			baseUri: process.env.baseUri
+		});
+	}else{
 		let rawdata_p = fs.readFileSync('data/projects/'+code+'.json');
 		let projectData = JSON.parse(rawdata_p);
 
@@ -45,13 +52,6 @@ router.get('/:query', async function (req, res) {
 			prevData: prevData,
 			nextData: nextData,
 			ref: code,
-			baseUri: process.env.baseUri
-		});
-	}else{
-		res.render('index', {
-			viewPath: 'project/article_not_found.ejs',
-			currentPage: 'project',
-			meta: 'project',
 			baseUri: process.env.baseUri
 		});
 	}
