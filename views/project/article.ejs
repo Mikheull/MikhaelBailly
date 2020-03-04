@@ -41,7 +41,9 @@
                 <div class="md:pr-12 mt-5">
                     <h2 class="text-gray-800 text-3xl font-bold"><%= projectData.identity[0].fullname %></h2>
                     <ul class="my-3">
+                        <% let url_hashtag = '' %>
                         <% for (let key in projectData.informations[0].tags) { %>
+                            <% url_hashtag += `%20%23${projectData.informations[0].tags[key]}` %>
                             <li class="mr-1 mb-1 inline-block">
                                 <span class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#<%= projectData.informations[0].tags[key] %></span>
                             </li>
@@ -67,19 +69,19 @@
                         <div class="font-bold text-md my-2 text-center">Partager</div>
                         <ul class="px-6 py-4 my-3 text-center">
                             <li class="mr-1 mb-1 inline-block">
-                                <a href="https://www.linkedin.com/shareArticle?mini=true&url=<%- projectData.informations[0].shared_url %>&title=MikhaelBailly&source=MikhaelBailly" target="blank" class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2"><i class="fa fa-linkedin"></i></a>
+                                <a href="http://www.linkedin.com/shareArticle?mini=true&url=<%- projectData.informations[0].shared_url %>&title=D%C3%A9couvrez%20<%- projectData.identity[0].fullname %>%20%F0%9F%8E%89%20<%- url_hashtag %>" target="blank" class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2"><i class="fa fa-linkedin"></i></a>
                             </li>
                             <li class="mr-1 mb-1 inline-block">
-                                <a href="https://twitter.com/intent/tweet?url=<%- projectData.informations[0].shared_url %>" target="blank" class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/intent/tweet?url=<%- projectData.informations[0].shared_url %>&text=D%C3%A9couvrez%20<%- projectData.identity[0].fullname %>%20%F0%9F%8E%89%20<%- url_hashtag %>" target="blank" class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2"><i class="fa fa-twitter"></i></a>
                             </li>
                             <li class="mr-1 mb-1 inline-block">
-                                <a href="https://www.facebook.com/sharer.php?u=<%- projectData.informations[0].shared_url %>" target="blank" class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2"><i class="fa fa-facebook-square"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=<%- projectData.informations[0].shared_url %>" target="blank" class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2"><i class="fa fa-facebook-square"></i></a>
                             </li>
                             <li class="mr-1 mb-1 inline-block">
-                                <a href="http://pinterest.com/pin/create/link/?url=<%- projectData.informations[0].shared_url %>" target="blank" class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2"><i class="fa fa-pinterest"></i></a>
+                                <a href="http://pinterest.com/pin/create/button/?url=<%- projectData.informations[0].shared_url %>&media=https%3A%2F%2Fmikhaelbailly.fr%2Fimages%2Fo%2Faccount_banner.jpg&description=D%C3%A9couvrez%20<%- projectData.identity[0].fullname %>%20%F0%9F%8E%89%20<%- url_hashtag %>" target="blank" class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2"><i class="fa fa-pinterest"></i></a>
                             </li>
                             <li class="mr-1 mb-1 inline-block">
-                                <a href="mailto:?subject=Partage de projet sur mikhaelbailly.fr&body=<%- projectData.informations[0].shared_url %>" target="blank" class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2"><i class="fa fa-envelope"></i></a>
+                                <a href="mailto:?subject=Découvrez le projet <%= projectData.identity[0].fullname %>&body=<%- projectData.informations[0].shared_url %>" target="blank" class="bg-gray-200 rounded px-3 py-1 text-sm font-semibold text-gray-700 mr-2"><i class="fa fa-envelope"></i></a>
                             </li>
                         </ul>
                     </div>
