@@ -21,7 +21,7 @@
                     <p><%= projectData.informations[0].navbar[0].description %></p>
                     <div>
                         <% if(projectData.informations[0].navbar[0].external_url) { %>
-                            <a href="<%= baseUri %><%= projectData.informations[0].navbar[0].external_url_path %>" class="link primary-link" target="blank"> <i class="fa fa-link"></i> </a>
+                            <a href="<%= projectData.informations[0].navbar[0].external_url_path %>" class="link primary-link" target="blank"> <i class="fa fa-link"></i> </a>
                         <% } %>
                     </div>
                 </div>
@@ -153,7 +153,7 @@
             <div class="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
                 <% for (let key in projectData.gallery) { %>
                     <div class="text-center my-5">
-                        <a class="image-link rounded mb-2" href="../images/projets/<%= ref %>/gallery/<%= projectData.gallery[key].min_name %>" title="<%= projectData.gallery[key].alt %>"> 
+                        <a class="image-link rounded mb-2" href="../images/projets/<%= ref %>/gallery/<%= projectData.gallery[key].original_name %>" title="<%= projectData.gallery[key].alt %>"> 
                             <img src="../images/projets/<%= ref %>/gallery/<%= projectData.gallery[key].min_name %>" alt="<%= projectData.gallery[key].alt %>" width="100%"> 
                         </a>
                         <small class="text-md font-medium text-gray-700"><%= projectData.gallery[key].alt %></small>
