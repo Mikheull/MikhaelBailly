@@ -10,6 +10,9 @@ router.use('/github', require('./github') );
 router.use('/projets', require('./project') );
 router.get('/job', function(req, res) {res.sendFile( resolve('./public/uploads/CV.pdf') );})
 
+router.get('/sitemap.xml', function(req, res) { res.set('Content-Type', 'text/xml'); res.render('sitemap')})
+router.get('/sitemap', function(req, res) { res.set('Content-Type', 'text/xml'); res.render('sitemap') })
+
 router.use(function(req,res){
     res.status(404).render('index', {
 		viewPath: '404/index.ejs',
