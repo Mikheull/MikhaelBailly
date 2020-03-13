@@ -28,7 +28,6 @@
     "express": "^4.17.1",
     "express-session": "^1.17.0",
     "http": "0.0.0",
-    "nodemailer": "^6.4.3",
     "octonode": "^0.9.5",
     "querystring": "^0.2.0",
     "request": "^2.88.0"

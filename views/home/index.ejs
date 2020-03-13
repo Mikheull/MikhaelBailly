@@ -72,8 +72,8 @@
 
 
 
-    <section class="pb-20 relative block bg-gray-300">
-        <div class="container mx-auto px-4 lg:pt-24 lg:pb-64">
+    <section class="relative block bg-gray-300">
+        <div class="container mx-auto px-4 lg:pt-24 pb-10 lg:pb-32">
             <div class="flex flex-wrap text-center justify-center">
                 <div class="w-full lg:w-6/12 px-4">
                     <h2 class="text-gray font-semibold text-4xl text-center">Mes derniers projets</h2>
@@ -112,41 +112,13 @@
                     </p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="relative block py-24 lg:pt-0 bg-gray-300">
-        <form method="post" id="contact-form">
-            <div class="container mx-auto px-4">
-                <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
-                    <div class="w-full lg:w-6/12">
-                        <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-gray-900">
-                            <div class="flex-auto p-5 lg:p-10">
-                                <h4 class="text-2xl font-semibold text-white">Vous voulez me contacter ?</h4>
-                                <p class="leading-relaxed mt-1 mb-4 text-gray-600">Remplissez ce formulaire</p>
-                                <div class="relative w-full mb-3 mt-8">
-                                    <label class="block uppercase text-white text-xs font-bold mb-2" for="full_name">Nom complet</label>
-                                    <input type="text" name="full_name" id="full_name" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="John Doe"/>
-                                </div>
-                                <div class="relative w-full my-3">
-                                    <label class="block uppercase text-white text-xs font-bold mb-2" for="email">Email</label>
-                                    <input type="email" name="email" id="email" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="john.doe@gmail.com"/>
-                                </div>
-    
-                                <div class="relative w-full mb-3">
-                                    <label class="block uppercase text-white text-xs font-bold mb-2" for="message">Message</label>
-                                    <textarea name="message" id="message" rows="4" cols="80" class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full" placeholder="Ecrivez votre message..."></textarea>
-                                </div>
-                                <div class="mt-6">
-                                    <div class="g-recaptcha" data-sitekey="6LekxN4UAAAAAEdtjEWarK04clcL_iNh1-XrZvMS" style="transform:scale(0.67);-webkit-transform:scale(0.67);transform-origin:0 0;-webkit-transform-origin:0 0;"></div>
-                                    <button name="send_message" class="bg-white text-gray-700 active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1">Envoyer le message</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="flex flex-wrap text-center justify-center">
+                <div class="w-full lg:w-6/12 px-4">
+                    <a href="<%= baseUri %>projets" class="bg-transparent hover:bg-blue-700 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-700 hover:border-transparent rounded">En découvrir plus</a>
                 </div>
             </div>
-        </form>
+        </div>
     </section>
 
 </main>
