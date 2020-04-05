@@ -14,23 +14,23 @@
                             "enable": false
                         }
                     ],
-                "shortname": "Sooneos",
-                "fullname": "Sooneos - Chantez vos musiques"
+                "shortname": "Senteos",
+                "fullname": "Senteos - Communiquez différement"
             }
         ],
 
     "informations":
         [
             {
-               "release_date": "05/03/2020", 
+               "release_date": "05/04/2020", 
                "last_edit_date": "05/04/2020",
-               "shared_url": "https://mikhaelbailly.fr/Sooneos",
+               "shared_url": "https://mikhaelbailly.fr/Senteos",
                "navbar": 
                     [
                         {
                             "external_url": true,
-                            "external_url_path": "https://sooneos.me",
-                            "description": "Application web de paroles avec vos musiques Spotify"
+                            "external_url_path": "https://senteos.me",
+                            "description": "Application web pour générer une playlist selon une phrase"
                         }
                     ],
                 "tags": 
@@ -38,21 +38,21 @@
                         "Application",
                         "Musique",
                         "Spotify",
-                        "Paroles",
-                        "Genius"
+                        "Playlist",
+                        "Communication"
                     ],
                 "description":
                     [
                         {
                             "enable": true,
-                            "text": "Chantez n'importe quelle chanson facilement en allant sur la homepage de l'application, votre musique sera automatiquement détectée et vous obtiendrez les paroles. L'application est reliée aux APIs de Spotify et Genius."
+                            "text": "Découvrez une nouvelle façon de communiquer ! Senteos est une petite application web qui vous permet de générer une sélection en fonction de la phrase que vous avez entrée, vous aurez alors la possibilité de la partager via un lien ou des réseaux sociaux. Il y a 2 modes, le premier \"Spotify view\" affichera les résultats trouvés dans une playlist (il peut y avoir des trous si la musique n’existe pas). Et le second \"Brut view\" complétera ces trous avec de la fausse musique générée automatiquement (vous ne pourrez pas générer la playlist après, mais faire un écran).  Senteos génère également la playlist sur votre compte Spotify"
                         }
                     ],
                 "card":
                     [
                         {
                             "title": "Nom",
-                            "data": "Sooneos"
+                            "data": "Senteos"
                         },
                         {
                             "title": "Type",
@@ -60,7 +60,7 @@
                         },
                         {
                             "title": "Durée",
-                            "data": "2 semaines"
+                            "data": "1 semaine"
                         }
                     ]
             }
@@ -77,14 +77,14 @@
     "gallery":
         [
             {
-                "min_name": "laptop.min.jpg",
-                "original_name": "laptop.jpg",
-                "alt": "Interface de l'application en version ordinateur"
+                "min_name": "music.min.jpg",
+                "original_name": "music.jpg",
+                "alt": "Interface mobile du résultat de la recherche"
             },
             {
-                "min_name": "mobile.min.jpg",
-                "original_name": "mobile.jpg",
-                "alt": "Interface de l'application en version téléphone"
+                "min_name": "playlist.min.jpg",
+                "original_name": "playlist.jpg",
+                "alt": "Interface mobile du résultat sous forme de playlist"
             }
         ]
 }

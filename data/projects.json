@@ -1,11 +1,20 @@
 {
+    "9ka8a1": {
+        "category": "app",
+        "name": "Senteos",
+        "description": "Application web pour générer une playlist selon une phrase",
+        "banner": "images/projets/9ka8a1/banners/banner.jpg",
+        "link": "Senteos",
+        "prev": "",
+        "next": "71a2nw"
+    },
     "71a2nw": {
         "category": "app",
         "name": "Sooneos",
         "description": "Application web de paroles avec vos musiques Spotify",
         "banner": "images/projets/71a2nw/banners/banner.jpg",
         "link": "Sooneos",
-        "prev": "",
+        "prev": "9ka8a1",
         "next": "a97y1c"
     },
     "a97y1c": {
