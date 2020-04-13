@@ -45,7 +45,7 @@
                     [
                         {
                             "enable": true,
-                            "text": "Découvrez une nouvelle façon de communiquer ! Senteos est une petite application web qui vous permet de générer une sélection en fonction de la phrase que vous avez entrée, vous aurez alors la possibilité de la partager via un lien ou des réseaux sociaux. Il y a 2 modes, le premier \"Spotify view\" affichera les résultats trouvés dans une playlist (il peut y avoir des trous si la musique n’existe pas). Et le second \"Brut view\" complétera ces trous avec de la fausse musique générée automatiquement (vous ne pourrez pas générer la playlist après, mais faire un écran).  Senteos génère également la playlist sur votre compte Spotify"
+                            "text": "Découvrez une nouvelle façon de communiquer ! Senteos est une petite application web qui vous permet de générer une playlist en fonction de la phrase que vous avez défini, vous aurez alors la possibilité de la partager via un lien ou des réseaux sociaux. Il y a 2 modes, le premier \"Spotify view\" affichera les résultats trouvés dans une playlist (il peut y avoir des trous si la musique n’existe pas). Et le second \"Brut view\" complétera ces trous avec des fausses musiques générées automatiquement (vous ne pourrez pas générer la playlist après, mais faire un screen). Senteos génère également la playlist sur votre compte Spotify."
                         }
                     ],
                 "card":
