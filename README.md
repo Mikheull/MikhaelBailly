@@ -7,7 +7,7 @@ Available on [https://mikhaelbailly.fr](https://mikhaelbailly.fr)
 
 ### Installation
 ```
-git clone https://github.com/Mikheull/Bailly_portfolio.git
+git clone https://github.com/Mikheull/MikhaelBailly.git
 npm install
 ```
 
