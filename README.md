@@ -1,4 +1,4 @@
-## My professional WebSite
+# My professional WebSite ![Issues](https://img.shields.io/github/issues/Mikheull/MikhaelBailly) ![GitHub last commit](https://img.shields.io/github/last-commit/Mikheull/MikhaelBailly)
 
 Available on [https://mikhaelbailly.fr](https://mikhaelbailly.fr)
 
