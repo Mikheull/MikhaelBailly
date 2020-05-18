@@ -1,13 +1,11 @@
-let express = require('express');
-let router = express.Router();
+const router = require('express').Router();
 
-router.get('/', async function(req, res, next) {
-	res.render('index', {
-		viewPath: 'home/index.ejs',
-        currentPage: 'home',
-		baseUri: process.env.baseUri
-	});
-});
+router.get('/', async function (req, res, next) {
+  res.render('index', {
+    viewPath: 'home/index.ejs',
+    currentPage: 'home',
+    BASE_URL: process.env.BASE_URL
+  })
+})
 
-
-module.exports = router;
+module.exports = router

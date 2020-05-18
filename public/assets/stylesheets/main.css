@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 .title-lg-shadow {text-shadow: 43px -25px 0px rgba(7, 24, 40, 0.03);}
 .title-md-shadow {text-shadow: 26px -15px 0px rgba(7, 24, 40, 0.03);}
 .title-sm-shadow {text-shadow: 21px -12px 0px rgba(7, 24, 40, 0.03);}

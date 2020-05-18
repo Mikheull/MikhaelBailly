@@ -4,7 +4,10 @@
   "description": "My Website portfolio",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon"
+    "build": "npm install && npm build-tail && eslint ./* app.js && npm start",
+    "build-tail": "npx tailwindcss build public/assets/stylesheets/main.css -o public/build/main.css",
+    "start": "eslint ./* app.js && nodemon",
+    "lint": "eslint ./* app.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +20,13 @@
     "url": "https://github.com/Mikheull/MikhaelBailly/issues"
   },
   "devDependencies": {
-    "nodemon": "^1.19.4"
+    "nodemon": "^1.19.4",
+    "eslint": "4.19.1",
+    "eslint-config-standard": "11.0.0",
+    "eslint-plugin-import": "2.12.0",
+    "eslint-plugin-node": "6.0.1",
+    "eslint-plugin-promise": "3.8.0",
+    "eslint-plugin-standard": "3.1.0"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -30,6 +39,7 @@
     "http": "0.0.0",
     "octonode": "^0.9.5",
     "querystring": "^0.2.0",
-    "request": "^2.88.0"
+    "request": "^2.88.0",
+    "tailwindcss": "^1.4.6"
   }
 }
