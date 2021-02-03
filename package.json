@@ -1,45 +1,28 @@
 {
-  "name": "mikhaelbailly",
-  "version": "1.0.0",
-  "description": "My Website portfolio",
-  "main": "app.js",
+  "name": "wd-spacex",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "build": "npm install && npm build-tail && eslint ./* app.js && npm start",
-    "build-tail": "npx tailwindcss build public/assets/stylesheets/main.css -o public/build/main.css",
-    "start": "eslint ./* app.js && nodemon",
-    "lint": "eslint ./* app.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mikheull/MikhaelBailly.git"
-  },
-  "homepage": "https://github.com/Mikheull/MikhaelBailly#readme",
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Mikheull/MikhaelBailly/issues"
-  },
-  "devDependencies": {
-    "nodemon": "^1.19.4",
-    "eslint": "4.19.1",
-    "eslint-config-standard": "11.0.0",
-    "eslint-plugin-import": "2.12.0",
-    "eslint-plugin-node": "6.0.1",
-    "eslint-plugin-promise": "3.8.0",
-    "eslint-plugin-standard": "3.1.0"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.4",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "ejs": "^2.7.1",
-    "express": "^4.17.1",
-    "express-session": "^1.17.0",
-    "http": "0.0.0",
-    "octonode": "^0.9.5",
+    "@zeit/next-sass": "^1.0.1",
+    "autoprefixer": "^9.8.6",
+    "axios": "^0.21.1",
+    "fs": "0.0.1-security",
+    "gsap": "^3.6.0",
+    "moment": "^2.29.1",
+    "next": "10.0.5",
+    "node-sass": "^5.0.0",
+    "postcss": "^7.0.35",
     "querystring": "^0.2.0",
-    "request": "^2.88.0",
-    "tailwindcss": "^1.4.6"
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "react-gsap": "^2.2.1",
+    "react-scrollmagic": "^2.2.0",
+    "scrollmagic": "^2.0.8",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   }
 }
